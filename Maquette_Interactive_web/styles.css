@@ -1,0 +1,85 @@
+
+body{
+    background-color: #D9D9D9;
+}
+.titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.titre p{
+    font-family: "inter";
+    font-size: 3vw;
+    width: 100%;
+    text-align:center
+
+}
+
+.titre img{
+    width: 300px;
+    height: 300px;
+}
+
+.titre button{
+    font-family: "inter";
+    font-size: 2vw;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.frame {
+    display: flex;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#name{
+    font-family: 'Inter';
+    font-style: normal;
+
+color: #FFFFFF;
+
+
+}
+.left {
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+    border-right: 1px solid black;
+    text-align: center;
+    
+}
+
+.first{
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    font-size: larger;
+    font-family: "inter";
+
+}
+.first img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    border: 4px solid white; 
+}
+
+.second {
+    
+}
+.third {
+    
+    background-color: black;
+    color: white;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
