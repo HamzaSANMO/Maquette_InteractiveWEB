@@ -85,6 +85,8 @@ body{
 .right{
     position: absolute;
     display: flex;
+    height: 100%;
+    width: 60%;
     flex-direction: column;
     justify-content: center;
     left: 40%;
@@ -377,6 +379,13 @@ body{
     font-size: 13px;
 }
 
+#profil {
+    position: absolute;
+    width: 80%;
+    top: 3%;
+
+}
+
 .cercle_profil {
     position: absolute;
     border-radius: 50px;
@@ -397,7 +406,7 @@ body{
 
 #title {
     position: absolute;
-    left: 10%;
+    left: 8%;
     width: 100px;
     height: 50%;
     top: 3.5%;
@@ -408,19 +417,203 @@ body{
 
 .somary {
     position: absolute;
-    width: 100%;
+    width: 75%;
     height: 10%;
-    top: 6%;
+    top: 7vh;
     font-family: "inter";
     font-weight: 300;
     font-size: 13px;
 }
 .sommary {
     position: absolute;
-    width: 100%;
+    width: 75%;
     height: 10%;
-    top: 14%;
+    top: 25vh;
     font-family: "inter";
     font-weight: 300;
     font-size: 13px;
+}
+
+#experiences{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.cercle_experience {
+    position: absolute;
+    border-radius: 50px;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    top: 4%;
+}
+
+#logo_experience {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 1%;
+    top: 4.2%;
+}
+.experience {
+    position: absolute;
+    left: 7%;
+    width: 20%;
+    height: 5vh;
+    top: 1.5%;
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 20px;
+}
+.devweb {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    top: 8%;
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 15px;
+}
+.work {
+    position: absolute;
+    width: 30%;
+    height: 5vh;
+    top: 10%;
+    font-family: "inter";
+    font-weight: 300;
+    font-size: 13px;
+}
+.learning {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 13%;
+    font-family: "inter";
+    font-weight: 100;
+    font-size: 20px;
+}
+.now {
+    position: absolute;
+    left: 70%;
+    width: 100px;
+    height: 5vh;
+    top: 8%;
+    font-family: "inter";
+    font-weight: 50;
+    font-size: 10px;
+}
+.marketing {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    top: 18%;
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 15px;
+}
+.technologies {
+    position: absolute;
+    width: 30%;
+    height: 5vh;
+    top: 20%;
+    font-family: "inter";
+    font-weight: 300;
+    font-size: 13px;
+}
+.vente {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 21%;
+    font-family: "inter";
+    font-weight: 100;
+    font-size: 20px;
+}
+.last {
+    position: absolute;
+    left: 70%;
+    width: 100px;
+    height: 5vh;
+    top: 18%;
+    font-family: "inter";
+    font-weight: 50;
+    font-size: 10px;
+}
+.manager {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    top: 24%;
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 15px;
+}
+.freelance {
+    position: absolute;
+    width: 30%;
+    height: 5vh;
+    top: 27%;
+    font-family: "inter";
+    font-weight: 300;
+    font-size: 13px;
+}
+.speed {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 29%;
+    font-family: "inter";
+    font-weight: 100;
+    font-size: 20px;
+}
+.best {
+    position: absolute;
+    left: 70%;
+    width: 100px;
+    height: 5vh;
+    top: 24%;
+    font-family: "inter";
+    font-weight: 50;
+    font-size: 10px;
+}
+
+#competences{
+    position: absolute;
+    top: 60%;
+    
+
+}
+.organisation{
+    position: absolute;
+    top: 70%;
+    
+
+}
+.langue{
+    position: absolute;
+    top: 70%;
+    
+
+}
+.hobbie{
+    position: absolute;
+    top: 75%;
+    
+
+}
+.colonne{
+    position: absolute;
+    top: 80%;
+    
+
+}
+#button {
+    position: absolute;
+    bottom: 0;
+    
+
 }
