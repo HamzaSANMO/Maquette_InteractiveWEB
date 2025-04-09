@@ -38,49 +38,33 @@ body{
 
 
 .frame {
-    /* 595. 842 */
     display: flex;
     width: 794px;
     height: 1123px;
-    justify-content: center;
-    position: relative;
     background-color: white;
-    display: flex;
-
 }
-#name{
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    left: 15.91px;
-    text-align: justify;
-    top: 20px;
+#name {
+    width: 100%;
+    height: 9%;
+    text-align: center;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 25px;
     color: #FFFFFF;
 }
-.job{
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    left: 15.91px;
-    top: 55px;
+.job {
+    width: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    text-align: justify;
     color: #FFFFFF;
 }
-
-
 .left {
-    position: absolute;
-    left: 8%;
-    width: 25%;
-    height: 100%;
+    width: 30%;
+    height: 103%;
+    overflow: hidden;
+    margin-left: 5%;
     background-color: grey;
     border-right: 1px solid black;
 }
@@ -94,85 +78,87 @@ body{
     left: 40%;
 }
 
-.first{
+.first {
     background-color: black;
     width: 100%;
-    height: 25%;
+    height: 30%;
     color: white;
+    margin-top: -7%;
+    padding-top: 18%;
     border-radius: 0 0 200px 200px;
     text-align: center;
+    justify-items: center;
     font-size: larger;
     font-family: "inter";
-
 }
 .first img {
-    position: absolute;
-    left: 12%;
-    top: 10%;
-    width: 70%;
-    height: 13%;
+    height: 55%;
     border-radius: 50%;
-    border: 5px solid white; 
+    border: 5px solid grey; 
 }
 .second {
-    
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+}
+
+.ligne_adr{
+    display: flex;
+    margin-top: 10%;
+    gap: 5%;
 }
 
 #adresse {
-    position: absolute;
-    left: 20%;
-    width: 100px;
-    height: 50%;
-    top: 25%;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
 }
+
+.small_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 280%;
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+}
 .adres_info {
-    position: absolute;
-    top: 30%;
-    left: 20%;
+    display: flex;
+    gap: 10%;
     width: 50%;
     height: 10%;
     font-family: "inter";
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
 }
 
+
 .third {
-    position: absolute;
     background-color: black;
     color: white;
     border-radius: 200px 200px 0 0;
-    top: 40%;
-    left: 4%;
     width: 93%;
-    height: 60%;
+    height: 51%;
+    margin-top: 10%;
+    margin-left: 3%;
 }
+
 #logo_adr{
-    position: absolute;
     width: 18px;
     height: 18px;
-    left: 10%;
-    top: 27%;
 }
 
 .cercle_adres {
-    position: absolute;
     border-radius: 50px;
     background-color: black;
     width: 20px;
     height: 20px;
-    left: 10%;
-    top: 27%;
+    text-align: center;
 }
 
 .adres_info {
-    position: absolute;
     width: 50%;
     height: 43px;
-    left: 20%;
-    top: 28.5%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -182,149 +168,116 @@ body{
 }
 
 #logo_number {
-    position: absolute;
-    left: 10%;
-    top: 29.7%;
     height: 10px;
     width: 10px;
 }
 #mail_logo {
-    position: absolute;
-    left: 10%;
-    top: 31.8%;
     height: 10px;
     width: 10px;
 }
 #logo_localisation {
-    position: absolute;
-    left: 10%;
-    top: 33.7%;
     height: 10px;
     width: 10px;
 }
-.diplomes {
-    position: absolute;
+
+#education {
     top: 20px;
     left: 15px;
 }
 
+.ligne_diplome{
+    display: flex;
+}
 .cercle_diplome {
-    position: absolute;
     border-radius: 50px;
     background-color: white;
     width: 20px;
     height: 20px;
-    top: 30px;
 }
 
 #logo_diplome {
-    position: absolute;
     width: 16px;
     height: 16px;
-    left: 2px;
-    top: 32px;
+    
 }
 
 .diplome {
-    position: absolute;
-    left: 25px;
-    top: 30px;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
 }
 
 .university {
-    position: absolute;
     height: 18px;
     width: 100px;
-    top: 60px;
     font-family: "inter";
     font-weight: 500;
     font-size: 17px;
 }
 
 .grade {
-    position: absolute;
     width: 100px;
     height: 18px;
-    top: 85px;
     font-family: "inter";
     font-weight: 300;
     font-size: 15px;
 }
 .year {
-    position: absolute;
     width: 100px;
     height: 18px;
-    top: 110px;
     font-family: "inter";
     font-weight: 300;
     font-size: 13px;
 }
 
 .lycee {
-    position: absolute;
     height: 18px;
     width: 200px;
-    top: 150px;
     font-family: "inter";
     font-weight: 500;
     font-size: 17px;
 }
 
 .bachelor {
-    position: absolute;
     width: 100px;
     height: 18px;
-    top: 175px;
     font-family: "inter";
     font-weight: 300;
     font-size: 13px;
 }
 .annee {
-    position: absolute;
     width: 100px;
     height: 18px;
-    top: 190px;
     font-family: "inter";
     font-weight: 300;
     font-size: 13px;
 }
-.formations {
-    position: absolute;
+/* .formations {
     top: 20px;
     left: 15px;
-}
+} */
 
 .cercle_formation {
-    position: absolute;
     border-radius: 50px;
     background-color: white;
     width: 20px;
     height: 20px;
-    top: 300px;
 }
 
 #logo_formation {
-    position: absolute;
     width: 16px;
     height: 16px;
-    left: 2px;
-    top: 300px;
+    
+    
 }
 
 .formation {
-    position: absolute;
-    left: 25px;
-    top: 300px;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
 }
 
 .odc {
-    position: absolute;
     height: 18px;
     width: 150px;
     top: 330px;
@@ -334,7 +287,6 @@ body{
 }
 
 .aws {
-    position: absolute;
     width: 180px;
     height: 18px;
     top: 350px;
@@ -343,7 +295,6 @@ body{
     font-size: 13px;
 }
 .month {
-    position: absolute;
     width: 180px;
     height: 18px;
     top: 370px;
@@ -353,7 +304,6 @@ body{
 }
 
 .coursera {
-    position: absolute;
     height: 18px;
     width: 200px;
     top: 400px;
@@ -363,7 +313,6 @@ body{
 }
 
 .Cybersecurity {
-    position: absolute;
     width: 180px;
     height: 18px;
     top: 425px;
@@ -372,7 +321,6 @@ body{
     font-size: 13px;
 }
 .mois {
-    position: absolute;
     width: 200px;
     height: 18px;
     top: 445px;
@@ -390,7 +338,6 @@ body{
 }
 
 .cercle_profil {
-    position: absolute;
     border-radius: 50px;
     background-color: black;
     width: 20px;
@@ -399,7 +346,6 @@ body{
 }
 
 #logo_profil {
-    position: absolute;
     width: 14px;
     height: 14px;
     left: 1%;
@@ -408,7 +354,6 @@ body{
 }
 
 #title {
-    position: absolute;
     left: 8%;
     width: 100px;
     height: 10%;
@@ -419,7 +364,6 @@ body{
 }
 
 .somary {
-    position: absolute;
     width: 85%;
     height: 30%;
     top: 20%;
@@ -429,7 +373,6 @@ body{
     text-align: justify;
 }
 .sommary {
-    position: absolute;
     width: 85%;
     height: 30%;
     top: 60%;
@@ -440,7 +383,6 @@ body{
 }
 
 #experiences{
-    position: absolute;
     top: 25%;
     width: 100%;
     height: 50%;
@@ -449,7 +391,6 @@ body{
 }
 
 .cercle_experience {
-    position: absolute;
     border-radius: 50px;
     background-color: black;
     width: 20px;
@@ -458,14 +399,12 @@ body{
 }
 
 #logo_experience {
-    position: absolute;
     width: 14px;
     height: 14px;
     left: 1%;
     top: 3.6%;
 }
 .experience {
-    position: absolute;
     left: 7%;
     width: 40%;
     height: 5%;
@@ -475,7 +414,6 @@ body{
     font-size: 20px;
 }
 .devweb {
-    position: absolute;
     width: 100%;
     height: 5%;
     top: 8%;
@@ -484,7 +422,6 @@ body{
     font-size: 15px;
 }
 .work {
-    position: absolute;
     width: 30%;
     height: 5%;
     top: 11%;
@@ -493,7 +430,6 @@ body{
     font-size: 13px;
 }
 .learning {
-    position: absolute;
     width: 85%;
     height: 15%;
     top: 14%;
@@ -503,7 +439,6 @@ body{
     text-align: justify;
 }
 .now {
-    position: absolute;
     left: 80%;
     width: 100px;
     height: 3%;
@@ -513,7 +448,6 @@ body{
     font-size: 10px;
 }
 .marketing {
-    position: absolute;
     width: 100%;
     height: 5%;
     top: 29%;
@@ -522,7 +456,6 @@ body{
     font-size: 15px;
 }
 .technologies {
-    position: absolute;
     width: 30%;
     height: 5%;
     top: 32%;
@@ -531,7 +464,6 @@ body{
     font-size: 13px;
 }
 .vente {
-    position: absolute;
     width: 85%;
     height: 5%;
     top: 35%;
@@ -541,7 +473,6 @@ body{
     text-align: justify;
 }
 .last {
-    position: absolute;
     left: 80%;
     width: 100px;
     height: 1vh;
@@ -551,7 +482,6 @@ body{
     font-size: 10px;
 }
 .manager {
-    position: absolute;
     width: 100%;
     height: 5%;
     top: 50%;
@@ -560,7 +490,6 @@ body{
     font-size: 15px;
 }
 .freelance {
-    position: absolute;
     width: 30%;
     height: 5%;
     top: 53%;
@@ -569,7 +498,6 @@ body{
     font-size: 13px;
 }
 .content {
-    position: absolute;
     width: 85%;
     height: 15%;
     top: 56%;
@@ -579,7 +507,6 @@ body{
     text-align: justify;
 }
 .best {
-    position: absolute;
     left: 75%;
     width: 100px;
     height: 1vh;
@@ -590,21 +517,18 @@ body{
 }
 
 #competences{
-    position: absolute;
     top: 65%;
     width: 100%;
     height: 40%;
 }
 
 #logo_competence {
-    position: absolute;
     width: 18px;
     height: 18px;
     top: 0.5%;
 }
 
 .competence {
-    position: absolute;
     left: 7%;
     width: 20%;
     height: 5%;
