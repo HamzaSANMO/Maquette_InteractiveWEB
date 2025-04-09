@@ -1,3 +1,7 @@
+:root {
+    --bg-color:#333333;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -35,12 +39,18 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+CV-body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .frame {
     display: flex;
     width: 794px;
     height: 1123px;
+    margin: 0 auto;
     background-color: white;
 }
 #name {
@@ -62,28 +72,24 @@ body{
 }
 .left {
     width: 30%;
-    height: 103%;
-    overflow: hidden;
+    height: 100%;
     margin-left: 5%;
     background-color: grey;
     border-right: 1px solid black;
 }
-.right{
-    position: absolute;
+.right {
     display: flex;
     height: 100%;
-    width: 60%;
+    width: 80%;
     flex-direction: column;
-    justify-content: center;
-    left: 40%;
+    margin-left: 5%;
 }
 
 .first {
-    background-color: black;
+    background-color: var(--bg-color);
     width: 100%;
-    height: 30%;
+    height: 25%;
     color: white;
-    margin-top: -7%;
     padding-top: 18%;
     border-radius: 0 0 200px 200px;
     text-align: center;
@@ -92,7 +98,7 @@ body{
     font-family: "inter";
 }
 .first img {
-    height: 55%;
+    height: 50%;
     border-radius: 50%;
     border: 5px solid grey; 
 }
@@ -134,13 +140,16 @@ body{
 
 
 .third {
-    background-color: black;
+    padding-top: 30%;
+    background-color: var(--bg-color);
     color: white;
     border-radius: 200px 200px 0 0;
     width: 93%;
-    height: 51%;
+    height: 53%;
     margin-top: 10%;
     margin-left: 3%;
+    display: flex;
+    justify-content: center;
 }
 
 #logo_adr{
@@ -181,24 +190,25 @@ body{
 }
 
 #education {
-    top: 20px;
-    left: 15px;
+    margin-left: 20%;
 }
 
 .ligne_diplome{
     display: flex;
+    gap: 5%;
 }
 .cercle_diplome {
     border-radius: 50px;
     background-color: white;
     width: 20px;
     height: 20px;
+    text-align: center;
 }
 
 #logo_diplome {
     width: 16px;
     height: 16px;
-    
+    text-align: center;
 }
 
 .diplome {
@@ -209,7 +219,7 @@ body{
 
 .university {
     height: 18px;
-    width: 100px;
+    width: 60%;
     font-family: "inter";
     font-weight: 500;
     font-size: 17px;
@@ -252,16 +262,21 @@ body{
     font-weight: 300;
     font-size: 13px;
 }
-/* .formations {
-    top: 20px;
-    left: 15px;
-} */
+.ligne_formation{
+    display: flex;
+    gap: 5%;
+}
 
 .cercle_formation {
     border-radius: 50px;
     background-color: white;
     width: 20px;
     height: 20px;
+}
+.ligne_formation{
+    display: flex;
+    text-align: center;
+    gap: 5%;
 }
 
 #logo_formation {
@@ -329,12 +344,17 @@ body{
     font-size: 13px;
 }
 
+
 #profil {
-    position: absolute;
     width: 100%;
     height: 20%;
-    top: 3%;
+    margin-top: 12%;
 
+}
+
+.ligne_profil{
+    display: flex;
+    gap: 5%;
 }
 
 .cercle_profil {
@@ -342,22 +362,18 @@ body{
     background-color: black;
     width: 20px;
     height: 20px;
-    top: 3.5%;
+    text-align: center;
 }
 
 #logo_profil {
     width: 14px;
     height: 14px;
-    left: 1%;
-    top: 3.7%;
 
 }
 
 #title {
-    left: 8%;
     width: 100px;
     height: 10%;
-    top: 3.5%;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
@@ -365,29 +381,24 @@ body{
 
 .somary {
     width: 85%;
-    height: 30%;
-    top: 20%;
+    height: 80%;
     font-family: "inter";
     font-weight: 300;
     font-size: 17px;
     text-align: justify;
 }
-.sommary {
-    width: 85%;
-    height: 30%;
-    top: 60%;
-    font-family: "inter";
-    font-weight: 300;
-    font-size: 17px;
-    text-align: justify;
+.devfull{
+    display: flex;
 }
 
 #experiences{
-    top: 25%;
     width: 100%;
     height: 50%;
+}
 
-
+.ligne_experience{
+    display: flex;
+    gap: 5%;
 }
 
 .cercle_experience {
@@ -395,20 +406,16 @@ body{
     background-color: black;
     width: 20px;
     height: 20px;
-    top: 3%;
+    text-align: center;
 }
 
 #logo_experience {
     width: 14px;
     height: 14px;
-    left: 1%;
-    top: 3.6%;
 }
 .experience {
-    left: 7%;
     width: 40%;
     height: 5%;
-    top: 3%;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
@@ -416,7 +423,6 @@ body{
 .devweb {
     width: 100%;
     height: 5%;
-    top: 8%;
     font-family: "inter";
     font-weight: 600;
     font-size: 15px;
@@ -424,7 +430,6 @@ body{
 .work {
     width: 30%;
     height: 5%;
-    top: 11%;
     font-family: "inter";
     font-weight: 550;
     font-size: 13px;
@@ -432,7 +437,6 @@ body{
 .learning {
     width: 85%;
     height: 15%;
-    top: 14%;
     font-family: "inter";
     font-weight: 100;
     font-size: 17px;
@@ -442,94 +446,26 @@ body{
     left: 80%;
     width: 100px;
     height: 3%;
-    top: 8.5%;
-    font-family: "inter";
-    font-weight: 50;
-    font-size: 10px;
-}
-.marketing {
-    width: 100%;
-    height: 5%;
-    top: 29%;
-    font-family: "inter";
-    font-weight: 600;
-    font-size: 15px;
-}
-.technologies {
-    width: 30%;
-    height: 5%;
-    top: 32%;
-    font-family: "inter";
-    font-weight: 550;
-    font-size: 13px;
-}
-.vente {
-    width: 85%;
-    height: 5%;
-    top: 35%;
-    font-family: "inter";
-    font-weight: 100;
-    font-size: 17px;
-    text-align: justify;
-}
-.last {
-    left: 80%;
-    width: 100px;
-    height: 1vh;
-    top: 29.5%;
-    font-family: "inter";
-    font-weight: 50;
-    font-size: 10px;
-}
-.manager {
-    width: 100%;
-    height: 5%;
-    top: 50%;
-    font-family: "inter";
-    font-weight: 600;
-    font-size: 15px;
-}
-.freelance {
-    width: 30%;
-    height: 5%;
-    top: 53%;
-    font-family: "inter";
-    font-weight: 550;
-    font-size: 13px;
-}
-.content {
-    width: 85%;
-    height: 15%;
-    top: 56%;
-    font-family: "inter";
-    font-weight: 100;
-    font-size: 17px;
-    text-align: justify;
-}
-.best {
-    left: 75%;
-    width: 100px;
-    height: 1vh;
-    top: 50.5%;
     font-family: "inter";
     font-weight: 50;
     font-size: 10px;
 }
 
 #competences{
-    top: 65%;
     width: 100%;
-    height: 40%;
+    height: 20%;
+}
+.ligne_competence{
+    display: flex;
+    gap: 5%;
 }
 
 #logo_competence {
     width: 18px;
     height: 18px;
-    top: 0.5%;
 }
 
 .competence {
-    left: 7%;
     width: 20%;
     height: 5%;
     font-family: "inter";
@@ -538,96 +474,26 @@ body{
 }
 
 .progres {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 6%;
     display: flex;
-    align-items: center;
-    gap: 24px;
+    flex-direction: column;
+    gap: 20%;
+    padding-top: 5%;
+    margin-left: 5%;
 }
 .bar_progres{
     display: flex;
 }
-.progres4 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 6%;
-    left: 45%;
+.element-progres{
+    display: flex;
+}
+.element-pro{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 40%;
 }
-.bar_progres4{
-    display: flex;
-}
-.progres2 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.bar_progres2{
-    display: flex;
-}
-.progres5 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 10%;
-    left: 45%;
-    display: flex;
-    align-items: center;
-    gap: 55px;
-}
-.bar_progres5{
-    display: flex;
-}
-.progres3 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 14%;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-.bar_progres3{
-    display: flex;
-}
-.progres3 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 14%;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-.bar_progres3{
-    display: flex;
-}
-.progres6 {
-    position: absolute;
-    width: 40%;
-    height: 5%;
-    top: 14%;
-    left: 45%;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-.bar_progres6{
-    display: flex;
-}
-
 .bar1, .bar2 {
-    width: 40px;
-    height: 5px;
+    width: 25px;
+    height: 8px;
     background-color: black;
 }
 .bar1{
@@ -639,71 +505,69 @@ body{
     border-radius: 0 5px 5px 0;
 }
 
+.ligne_lanhob {
+    display: flex;
+    text-align: center;
+}
 
+.ligne_langue{
+    display: flex;
+    flex-direction: column;
+}
+.colonne{
+    padding-right: 20%;
+}
 .cercle_langue {
-    position: absolute;
     border-radius: 50px;
     background-color: black;
     width: 20px;
     height: 20px;
-    top: 75%;
-    left: 40%;
 }
 
 #logo_langue {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    top: 75.2%;
-    left: 40.5%;
+    width: 13px;
+    height: 13px;
 }
 .langue {
-    position: absolute;
     width: 5%;
     height: 5%;
-    top: 75%;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
 }
 
+.ligne_hobbie{
+    display: flex;
+    gap: 5%;
+}
+.cercle_langue{
+    display: flex;
+}
 .cercle_hobbie {
-    position: absolute;
     border-radius: 50px;
     background-color: black;
     width: 20px;
     height: 20px;
-    top: 75%;
-    left: 66%;
 }
 
 #logo_hobbie {
-    position: absolute;
     width: 13px;
     height: 13px;
-    left: 1%;
-    top: 75.2%;
-    left: 66.4%;
 }
 
 .hobbie {
-    position: absolute;
-    left: 70%;
     width: 20%;
     height: 5%;
-    top: 75%;
     font-family: "inter";
     font-weight: 900;
     font-size: 20px;
 }
 
 .colonne {
-    position: absolute;
-    top: 77%;
-    display: flex;
-    left: 35%;
-    gap: 2%;
-}
+        display: flex;
+        margin-left: -45%;
+        margin-top: 5%;
+    }
 
 #acceuil{
     background-color: black;
@@ -712,7 +576,7 @@ body{
     height: 5vh;
     border-radius: 5px;
 }
-#color{
+#cvcolor{
     background-color: black;
     color: white;
     width: 20vw;
