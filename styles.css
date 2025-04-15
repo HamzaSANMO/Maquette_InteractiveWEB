@@ -2,15 +2,14 @@
     --bg-color:#333333;
 }
 
-body{
+#home_body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
     background-color: #D9D9D9;
-    
-    
+  
 }
 
 .cta p{
@@ -39,17 +38,24 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-CV-body{
-    width: 100%;
-    height: 100%;
+.CV-body{
+   
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.frame {
+#cv {
     display: flex;
-    width: 794px;
-    height: 1123px;
+    justify-content: center;
+    align-items: center;
+    width: 21cm;
+    height: 29.7cm;
     margin: 0 auto;
     background-color: white;
 }
@@ -80,7 +86,7 @@ CV-body{
 .right {
     display: flex;
     height: 100%;
-    width: 80%;
+    width: 70%;
     flex-direction: column;
     margin-left: 5%;
 }
@@ -98,9 +104,10 @@ CV-body{
     font-family: "inter";
 }
 .first img {
-    height: 50%;
+    height: 52%;
     border-radius: 50%;
     border: 5px solid grey; 
+    width: 90%;
 }
 .second {
     width: 100%;
@@ -145,8 +152,8 @@ CV-body{
     color: white;
     border-radius: 200px 200px 0 0;
     width: 93%;
-    height: 53%;
-    margin-top: 10%;
+    height: 31%;
+    margin-top: 123%;
     margin-left: 3%;
     display: flex;
     justify-content: center;
@@ -514,8 +521,10 @@ CV-body{
     display: flex;
     flex-direction: column;
 }
-.colonne{
-    padding-right: 20%;
+.colonnes{
+    margin-top: 5%;
+    display: flex;
+    margin-left: -45%;
 }
 .cercle_langue {
     border-radius: 50px;
@@ -565,8 +574,8 @@ CV-body{
 
 .colonne {
         display: flex;
-        margin-left: -45%;
-        margin-top: 5%;
+        margin-left: -10%;
+        margin-top: -5%;
     }
 
 #acceuil{
@@ -591,21 +600,19 @@ CV-body{
     border-radius: 5px;
 
 }
-.CV-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media (max-width:461px) {
-    .CV-body{
-        display: flex;
-        justify-content: center;
-        align-items: end;
-    }
-    .frame{
+@media (max-width:500px) {
+    
+    #cv{
+        height: 100vh;
         width: 100vw;
 
     }
-
+    .first img {
+    height: 50%;
+    border-radius: 50%;
+    border: 5px solid grey;
+    margin-top: 20%;
+    width: 90%;
+}
     
 }
